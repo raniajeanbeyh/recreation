@@ -1,0 +1,266 @@
+nav li {
+  list-style: none;
+  display: flex;
+  color: white;
+}
+nav li a {
+  color: white;
+  background-color: #df645f;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+}
+header nav li:first-child {
+  margin-right: auto;
+}
+header,
+body {
+  background-color: #db524d;
+}
+header {
+  border-bottom: 1px solid rgba(88, 87, 87, 0.788);
+}
+header nav li:last-child {
+  margin-right: 2rem;
+}
+
+.base-timer {
+  font-size: 70px;
+  text-align: center;
+  color: white;
+}
+.part2 {
+  background-color: white;
+}
+main {
+  margin: 50px;
+}
+.part1 {
+  background-color: #df645f;
+  border-radius: 5px;
+}
+.part1 > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.part1 li a {
+  color: white;
+  text-decoration: none;
+}
+.part1 ul a:hover {
+  transition: ease 1s;
+  border-bottom: 1px solid #f08c88;
+}
+
+.part1- {
+  padding: 50px;
+}
+#color2 {
+  color: #df645f;
+}
+.color-2 {
+  color: #f08c88;
+  text-align: center;
+}
+.milk {
+  color: white;
+  text-align: center;
+}
+.writing {
+  color: #f1b0ad;
+  text-align: center;
+}
+.part2,
+.part1,
+.part1-,
+.last {
+  font-family: "Rubik", sans-serif;
+}
+.part2,
+.last {
+  font-family: "Rubik", sans-serif;
+}
+
+.class-5 {
+  text-decoration: none;
+}
+.class-5 h4 {
+  transition: font-size 0.5s ease;
+  text-decoration: none;
+}
+.class-5 h4:hover {
+  font-size: 1.3em;
+}
+.last {
+  background-color: #df645f;
+  padding: 0.5rem;
+}
+.part2 > h3 {
+  border-left: 5px solid #db524d;
+}
+.icon-2 {
+  color: white;
+}
+#nbs {
+  font-size: 19px;
+  color: white;
+}
+.class-2 ul,
+.class-3 ul,
+.class-4 ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.class-2 ul li:first-child,
+.class-3 ul li:first-child + li,
+.class-4 ul li:first-child + li {
+  margin-right: auto;
+}
+.class-2 {
+  color: white;
+  border-bottom: 1px solid white;
+}
+.class-3,
+.class-4 {
+  color: black;
+  background-color: white;
+}
+.class-5 {
+  border: 2px dotted black;
+  text-align: center;
+}
+@media only screen and (min-width: 100px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-column: 2/3;
+    background-color: white;
+    background: linear-gradient(to bottom, #db524d 54%, white 0%);
+  }
+  header,
+  main,
+  footer {
+    grid-column: 2/3;
+  }
+  nav li {
+    list-style: none;
+    display: flex;
+    color: white;
+  }
+  nav li a {
+    color: white;
+    background-color: #df645f;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  header nav ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav li:first-child {
+    margin-right: auto;
+  }
+}
+
+div[class*="box"] {
+  height: 33.33%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+}
+.btn-three {
+  color: #fff;
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-three::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+.btn-three:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+.btn-three::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.grow {
+  transition: ease 0.5s;
+}
+.grow:hover {
+  border-radius: 20px;
+}
+footer {
+  border-top: 1px solid gray;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 2rem;
+  font-family: "Rubik", sans-serif;
+}
+footer ul a {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: gray;
+}
+.sentence-foot {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+#author {
+  color: #db524d;
+}
